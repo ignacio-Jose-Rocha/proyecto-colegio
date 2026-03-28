@@ -1,0 +1,138 @@
+.about {
+  background: #ffe5e5;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #dc2626;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.about-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #dc2626, #991b1b);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
+
+.about-card:hover::before {
+  transform: scaleX(1);
+}
+
+.about-card:hover .about-card-title {
+  color: #fbbf24;
+}
+
+.about-card:hover .about-card-description {
+  color: white;
+}
+
+.about-icon {
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+  animation: bounce 2s infinite;
+}
+
+.about-card:hover .about-icon {
+  animation: none;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.about-card-title {
+  color: #dc2626;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  transition: color 0.4s ease;
+}
+
+.about-card-description {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 1rem;
+  transition: color 0.4s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .about-grid {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-card {
+    padding: 30px 20px;
+  }
+
+  .about-icon {
+    font-size: 3.5rem;
+  }
+
+  .about-card-title {
+    font-size: 1.4rem;
+  }
+}
