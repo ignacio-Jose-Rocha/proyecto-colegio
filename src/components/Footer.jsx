@@ -11,7 +11,7 @@ const Footer = () => {
             <Logo />
           </div>
           <div className="footer-info">
-            <p>&copy; 2024 Colegio Naciones Unidas del Mundo. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Colegio Naciones Unidas del Mundo. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

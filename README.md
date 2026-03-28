@@ -209,7 +209,7 @@ const response = await fetch('https://formsubmit.co/ajax/rochaignaciojose@gmail.
 
 Este proyecto es propiedad del Colegio Naciones Unidas del Mundo. Todos los derechos reservados.
 
-## 👨‍💻 Desarrollado por
+## 👨💻 Desarrollado por
 
 **Contacto del Desarrollador:**  
 Email: rochaignaciojose@gmail.com
@@ -224,5 +224,5 @@ Email: rochaignaciojose@gmail.com
 
 <div align="center">
   <p>Hecho con ❤️ para el Colegio Naciones Unidas del Mundo</p>
-  <p>© 2024 Colegio Naciones Unidas del Mundo. Todos los derechos reservados.</p>
+  <p>© 2026 Colegio Naciones Unidas del Mundo. Todos los derechos reservados.</p>
 </div>
